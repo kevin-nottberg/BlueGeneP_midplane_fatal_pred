@@ -10,4 +10,4 @@ fatal_seq_filtering.py: removes chains of FATAL events in RAS logs
 fatal_sequence_extrction.py: creates and extracts FATAL sequences
 non_fatal_sequence_extraction.py: creates and extracts non FATAL sequences
 data_format.py: normalizes and puts data into vectors from sequence extraction. Also gets data in CSV format for scikit-learn
-model_train_test.py: will run training and testing cycles to measure prediction accuracy with a support vector machine mode 
+model_train_test.py: will run training and testing cycles to measure prediction accuracy with a support vector machine model 
