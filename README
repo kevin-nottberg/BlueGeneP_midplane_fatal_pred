@@ -4,4 +4,10 @@ The code is messy and uncommented and needs work in terms of cleaning, but funde
 the following url https://www.usenix.org/cfdr-data#bgp. 
 
 Script order of execution:
-log_filtering.py: reads in raw RAS log data and splits it into individual midplane files 
+log_spatial_filtering.py: reads in raw RAS log data and splits it into individual midplane files
+log_temporal_filtering.py: does temporal record redundant filtering across all midplane files
+fatal_seq_filtering.py: removes chains of FATAL events in RAS logs
+fatal_sequence_extrction.py: creates and extracts FATAL sequences
+non_fatal_sequence_extraction.py: creates and extracts non FATAL sequences
+data_format.py: normalizes and puts data into vectors from sequence extraction. Also gets data in CSV format for scikit-learn
+model_train_test.py: will run training and testing cycles to measure prediction accuracy with a support vector machine mode 
