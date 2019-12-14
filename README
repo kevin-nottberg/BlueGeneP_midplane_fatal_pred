@@ -1,0 +1,7 @@
+This code repo is for school a project in doing research on machine learning prediction using BlueGene/P RAS log data.
+
+The code is messy and uncommented and needs work in terms of cleaning, but fundementally, it needs scikit-learn and a set of data publicly available at
+the following url https://www.usenix.org/cfdr-data#bgp. 
+
+Script order of execution:
+log_filtering.py: reads in raw RAS log data and splits it into individual midplane files 
